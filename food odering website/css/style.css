@@ -1,0 +1,248 @@
+/* css reset */
+body {
+  /* background-color: red; */
+}
+* {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+/* css variables */
+:root {
+  --navbar-height: 40px;
+}
+
+/* navigation bar */
+#navbar {
+  /* flex-direction: column; */
+  position: absolute;
+  display: flex;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+}
+#navbar::before {
+  content: " ";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+/* naavigation bar logo and img  */
+#logo {
+  margin: 8px 17px;
+}
+#logo img {
+  margin: 1px 29px;
+  height: 75px;
+}
+
+/* navigationbar listing */
+#navbar {
+  position: relative;
+  /* background-color: coral; */
+}
+#navbar ul {
+  display: flex;
+  font-family: "Baloo Bhai", "cursive";
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+#navbar ul li a {
+  display: block;
+  /* padding: 10px 20px; */
+  text-decoration: none;
+  border-radius: 10px;
+  border: 2px solid rgb(243, 235, 235);
+  margin: auto 15px;
+  color: rgb(240, 232, 232);
+  font-size: 1.3rem;
+  padding: 6px 13px;
+  padding-bottom: 8px;
+  background-color: black;
+}
+#navbar ul li a:hover {
+  background-color: rgb(219, 95, 95);
+}
+/* section 1 css */
+#section1 {
+  display: flex;
+  flex-direction: column;
+  padding: 160px 68px;
+  font-style: normal;
+  font: bold;
+  justify-content: center;
+  align-items: center;
+  /* height: 550px; */
+  height: 200px;
+}
+
+#section1::before {
+  content: " ";
+  position: absolute;
+  background: url("/img/lily-banse--YHSwy6uqvk-unsplash.jpg") no-repeat center
+    center/cover;
+  height: 765px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -2;
+  opacity: 0.8;
+}
+#section1 h1 {
+  text-align: center;
+  color: rgb(10, 9, 9);
+  font-family: "Courier New", Courier, monospace;
+}
+#section1 p {
+  color: rgb(10, 8, 8);
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+/* services section */
+#section2 {
+  margin-top: 143px;
+}
+#service {
+  display: flex;
+  margin-top: 17px;
+}
+#service .box {
+  border: 2px solid black;
+  padding: 34px;
+  margin: 2px 15px;
+  border-radius: 23px;
+  background-color: rgb(252, 248, 248);
+  margin-bottom: 20px;
+}
+#service .box img {
+  height: 150px;
+  margin: auto;
+  display: block;
+}
+#service .box p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* clent section */
+#clientsection {
+  /* height: 344px; */
+  position: relative;
+  padding-top: 43px;
+}
+#clientsectionh1 {
+  font-size: 27px;
+  color: black;
+  padding: 20px 0px 0px 0px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#clients img {
+  height: 124px;
+}
+.clientitem {
+  padding: 34px;
+}
+#clientsection::before {
+  content: "";
+  position: absolute;
+  background: url("/img/chris-liverani-9cd8qOgeNIY-unsplash.jpg") no-repeat
+    center center/cover;
+  height: 94%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+/* contact section */
+
+#contact {
+  position: relative;
+  margin-top: 50px;
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url("/img/firmbee-com-SpVHcbuKi6E-unsplash.jpg") no-repeat center
+    center/cover;
+}
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+
+#contact-box form {
+  width: 40%;
+}
+
+#contact-box label {
+  font-size: 1.3rem;
+  font-family: "Bree Serif", serif;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+/* footer  */
+footer {
+  background: black;
+  color: white;
+  padding: 9px 20px;
+}
+
+/* utility class */
+#section1h1 {
+  font-size: 3.5rem;
+  padding: 12px;
+}
+#section2h1 {
+  font-size: 2.8rem;
+  padding: 12px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#section2h2 {
+  font-size: 2rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#btn {
+  border: 2px solid black;
+  padding: 6px 10px;
+  border-radius: 10px;
+  color: rgb(5, 4, 3);
+  background-color: bisque;
+  font-size: 1.3rem;
+  margin: 10px 10px;
+}
+#btn:hover {
+  background-color: red;
+}
+.center {
+  text-align: center;
+}
